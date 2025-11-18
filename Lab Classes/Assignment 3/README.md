@@ -24,44 +24,24 @@ where ackley(x,y,z) is the Ackley function.
 
 ## Implementation
 
-### Representation: 3D real vector  
-
+- Representation: 3D real vector  
 ```bash
 [x, y, z]
 ```
-### Initialization
-
-- Uniform random sampling from the range [−32.768,32.768]
-
-### Tournament selection 
-
-- k = 3  
-
-### Crossover
-
-- Arithmetic crossover probability (p=0.9) 
-
-### Mutation
-
+- Initialization: Uniform random sampling from the range [−32.768,32.768]
+- Tournament selection: k = 3  
+- Arithmetic crossover probability: p=0.9
 - Gaussian mutation per gene
 - Mutation rate tested at several values
 - Values clipped to the allowed range
-
-### Replacement
-
 - Generational replacement with elitism = 2
-
-### Termination 
-
 - Fixed number of generations (150) 
 
 ## Results
 
-### Best fitness plot
-Shows rapid improvement and convergence toward a fitness near 1.0, which corresponds to the Ackley global minimum.
+- Best fitness plot: Shows rapid improvement and convergence toward a fitness near 1.0, which corresponds to the Ackley global minimum.
 
-### Average fitness plot
-Shows rapid improvement and convergence toward a fitness near 1.0, which corresponds to the Ackley global minimum.
+- Average fitness plot: Shows rapid improvement and convergence toward a fitness near 1.0, which corresponds to the Ackley global minimum.
 
 Both plots included:
 
@@ -79,11 +59,20 @@ We tested the mutation rate parameter:
 | 0.15 | Highest | Best Balance |
 | 0.30 | Lower | Too noisy/ unstable |
 
+Mutation rate Results:
+
+```bash
+mutation_rate=0.010 -> final best fitness = 0.919877
+mutation_rate=0.050 -> final best fitness = 0.967569
+mutation_rate=0.150 -> final best fitness = 0.999055
+mutation_rate=0.300 -> final best fitness = 0.990688
+```
+
 Conclusion: **0.10–0.15 is optimal**.
 
 ---
 
-# 🤖 Task 2 — ANN Classification via EA
+# Task 2 — ANN Classification via EA
 
 ## Objective
 Evolve a simple ANN with weights `[w0, w1, w2]` to classify 2D data.
