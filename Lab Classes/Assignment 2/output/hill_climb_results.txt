@@ -1,0 +1,19 @@
+Hill Climber Evolution Log
+Target String: charles darwin was always seasick
+Total Generations: 5703
+
+First 5 Generations:
+Generation 0: gpgqvnn yv mxdmgzoisomlnfyusvyuix | Fitness = 1
+Generation 1: gpgqvnn yv mxdmgzoishmlnfyusvyuix | Fitness = 1
+Generation 2: gpgqvnn yv mxdmgzoishmlnfyusvyuix | Fitness = 1
+Generation 3: ipgqvnn yv mxdmgzoishmlnfyusvyuix | Fitness = 1
+Generation 4: ipgqvnn yv mxdmgzoishmlnfyusvhuix | Fitness = 1
+
+Last 5 Generations:
+Generation 5699: charles darwin wbs always seasick | Fitness = 32
+Generation 5700: charles darwin wbs always seasick | Fitness = 32
+Generation 5701: charles darwin wbs always seasick | Fitness = 32
+Generation 5702: charles darwin wbs always seasick | Fitness = 32
+Generation 5703: charles darwin was always seasick | Fitness = 33
+
+Final Result Reached in 5703 Generations.
